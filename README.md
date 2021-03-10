@@ -109,6 +109,48 @@ enum Env implements SerializableToGlobalVariableEntity {
 }
 ```
 
+## Execution Profile
+
+Files under the `Profiles` folder is a XML file. For example,  `main_AllSheets_AllURLs_DEVELOPMENT_0_NoSave.glbl` files would look like:
+
+```
+<?xml version="1.0" encoding="UTF-8"?><GlobalVariableEntities>
+  <description/>
+  <name>main_AllSheets_AllURLs_DEVELOPMENT_0_NoSave.glbl</name>
+  <tag/>
+  <defaultProfile>false</defaultProfile>
+  <GlobalVariableEntity>
+    <description/>
+    <initValue>Development</initValue>
+    <name>ENV</name>
+  </GlobalVariableEntity>
+  <GlobalVariableEntity>
+    <description/>
+    <initValue>0</initValue>
+    <name>CATEGORY</name>
+  </GlobalVariableEntity>
+  <GlobalVariableEntity>
+    <description/>
+    <initValue>[]</initValue>
+    <name>INCLUDE_SHEETS</name>
+  </GlobalVariableEntity>
+  <GlobalVariableEntity>
+    <description/>
+    <initValue>[]</initValue>
+    <name>INCLUDE_URLS</name>
+  </GlobalVariableEntity>
+  <GlobalVariableEntity>
+    <description/>
+    <initValue>false</initValue>
+    <name>SAVE_HTML</name>
+  </GlobalVariableEntity>
+</GlobalVariableEntities>
+```
+
+Reading and writing this XML format requires some complexed coding. Enveryting is encapsulated in the following class.
+
+- [com.kazurayam.ks.globalvariable.ExecutionProfile](Keywords/com/kazurayam/ks/globalvariable/ExecutionProfile.groovy)
+
 ## Execution Profiles Generator tool
 
 The following is the groovy script that generates a bunch of Execution Profiles. The script enumerates the combinations of possilbe values of the Domain Enums.
