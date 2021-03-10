@@ -153,7 +153,7 @@ But once I am provided with the tool, I will just do 2 things.
 2. kick the [Test Cases/tools/generateExecutionProfilesWithDomainEnums](Scripts/tools/generateExecutionProfilesWithDomainEnums/Script1615366743011.groovy)
 
 
-Wait for a second, stop KS and restart it. Then the complete set of Executiion Profiles will be ready for use. No hussle will be involved.
+Wait for approx. 10 seconds, then stop KS and restart it. The new set of Executiion Profiles will be ready for use. No hussle will be involved.
 
 ## How to reuse this solution in your Katalon Project
 
